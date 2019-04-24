@@ -45,11 +45,11 @@ public class MakeMyTripTestCases extends TestBase {
     public void test1() throws FileNotFoundException {
 
 
-        String selectedDepartureFlightPrice = oHome.getselecteddepartureFlightPriceFromList(driver, 1);
-        System.out.println(oHome.getselecteddepartureFlightPriceFromList(driver, 1));
+        String selectedDepartureFlightPrice = oHome.getselecteddepartureFlightPriceFromList(driver, Constants.USER_FLIGHT_SELECTION_OPTION);
+        System.out.println(oHome.getselecteddepartureFlightPriceFromList(driver, Constants.USER_FLIGHT_SELECTION_OPTION));
 
-        String selectedReturnFlightPrice = oHome.getselectedreturnFlightPriceFromList(driver, 1);
-        System.out.println(oHome.getselectedreturnFlightPriceFromList(driver, 1));
+        String selectedReturnFlightPrice = oHome.getselectedreturnFlightPriceFromList(driver, Constants.USER_FLIGHT_SELECTION_OPTION);
+        System.out.println(oHome.getselectedreturnFlightPriceFromList(driver, Constants.USER_FLIGHT_SELECTION_OPTION));
 
         System.out.println("total number of Departure Flights Searched are:" + oHome.getSearchedDepartureFlightsCount(driver));
         System.out.println("total number of Return Flights Searched are:" + oHome.getSearchedReturnFlightsCount(driver));
