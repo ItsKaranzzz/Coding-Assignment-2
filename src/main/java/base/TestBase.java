@@ -48,7 +48,6 @@ public class TestBase {
 
     protected void browserSettings() {
 
-        driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(Constants.PAGELOAD_TIMEOUT, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 

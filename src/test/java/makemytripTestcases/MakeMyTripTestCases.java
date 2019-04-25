@@ -2,10 +2,7 @@ package makemytripTestcases;
 
 import base.TestBase;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.HomePage;
 import utils.Calendar;
@@ -77,7 +74,9 @@ public class MakeMyTripTestCases extends TestBase {
 
     }
 
-    @AfterTest
+
+
+    @AfterMethod
     public void closeResources() {
         tearDown();
     }
